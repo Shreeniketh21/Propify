@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="250dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/house_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mochiy_pop_one"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/primary_font"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/app_logo"/>
+
+    <TextView
+        android:id="@+id/app_slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mochiy_pop_one"
+        android:text="@string/find_invest_thrive"
+        android:textAlignment="center"
+        android:textColor="@color/primary_font"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@+id/app_name"/>
+
+    <TextView
+        android:id="@+id/app_powered_by1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:fontFamily="@font/mochiy_pop_one"
+        android:text="@string/powered_by"
+        android:textAlignment="center"
+        android:textColor="@color/primary_font"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@+id/app_slogan"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/app_powered_by2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mochiy_pop_one"
+        android:text="@string/developer_name"
+        android:textAlignment="center"
+        android:textColor="@color/primary_font"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@+id/app_powered_by1"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
